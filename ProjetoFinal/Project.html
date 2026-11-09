@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StoreProject | Sua loja</title>
+
+    <link rel="stylesheet" href="Project.css">
+
+    <script src="Project.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar container">
+
+            <a href="Project.html" class="logo">
+                Store<span>Project</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="Project.html">Início</a>
+                <a href="Produtos.html">Produtos</a>
+                <a href="Sobre.html">Sobre</a>
+                <a href="Contato.html">Contato</a>
+            </div>
+
+            <button class="cart-button" type="button">
+                Carrinho (<span id="cart-count">0</span>)
+            </button>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="hero container">
+
+            <div class="hero-content">
+
+                <span class="tag">BEM-VINDO À STOREPROJECT</span>
+
+                <h1>
+                    Encontre o que você procura.
+                    <span>Compre com facilidade.</span>
+                </h1>
+
+                <p>
+                    Conheça nossa coleção de produtos e encontre
+                    opções que combinam com você.
+                </p>
+
+                <a href="#produtos" class="main-button">
+                    Explorar produtos
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="products-section container" id="produtos">
+
+            <div class="section-header">
+
+                <div>
+                    <span class="tag">NOSSA COLEÇÃO</span>
+                    <h2>Produtos em destaque</h2>
+                </div>
+
+                <p>Encontre seus produtos favoritos.</p>
+
+            </div>
+
+            <div class="filters">
+
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Pesquisar produto..."
+                >
+
+                <select id="category-filter">
+                    <option value="todos">Todas as categorias</option>
+                    <option value="categoria1">Categoria 1</option>
+                    <option value="categoria2">Categoria 2</option>
+                </select>
+
+            </div>
+
+            <div class="products-grid" id="products-list">
+
+                <article class="product-card" data-category="categoria1">
+
+                    <div class="product-image">
+                        <img
+                            src="https://placehold.co/600x400?text=Produto+1"
+                            alt="Produto exemplo 1"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">Categoria 1</span>
+
+                        <h3>Produto Exemplo 01</h3>
+
+                        <p class="price">R$ 199,90</p>
+
+                        <button
+                            class="add-button"
+                            data-name="Produto Exemplo 01"
+                        >
+                            Adicionar ao carrinho
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="product-card" data-category="categoria2">
+
+                    <div class="product-image">
+                        <img
+                            src="https://placehold.co/600x400?text=Produto+2"
+                            alt="Produto exemplo 2"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">Categoria 2</span>
+
+                        <h3>Produto Exemplo 02</h3>
+
+                        <p class="price">R$ 299,90</p>
+
+                        <button
+                            class="add-button"
+                            data-name="Produto Exemplo 02"
+                        >
+                            Adicionar ao carrinho
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="product-card" data-category="categoria1">
+
+                    <div class="product-image">
+                        <img
+                            src="https://placehold.co/600x400?text=Produto+3"
+                            alt="Produto exemplo 3"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">Categoria 1</span>
+
+                        <h3>Produto Exemplo 03</h3>
+
+                        <p class="price">R$ 149,90</p>
+
+                        <button
+                            class="add-button"
+                            data-name="Produto Exemplo 03"
+                        >
+                            Adicionar ao carrinho
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p id="no-results" hidden>
+                Nenhum produto encontrado.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="container footer-content">
+
+            <p>© 2026 StoreProject. Todos os direitos reservados.</p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

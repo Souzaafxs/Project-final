@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Produtos | StoreProject</title>
+
+    <link rel="stylesheet" href="Project.css">
+    <script src="Project.js"></script>
+</head>
+
+<body>
+    
+    <header>
+        <nav class="navbar container">
+
+            <a href="../index.html" class="logo">
+                Store<span>Project</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="../index.html">Início</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="contato.html">Contato</a>
+            </div>
+
+            <button class="cart-button">
+                Carrinho (<span id="cart-count">0</span>)
+            </button>
+
+        </nav>
+    </header>
+
+
+    <main class="container products-section">
+
+        <div class="section-header">
+            <div>
+                <span class="tag">NOSSA LOJA</span>
+                <h2>Todos os produtos</h2>
+            </div>
+
+            <p>Confira nossa coleção completa.</p>
+        </div>
+
+
+        <div class="filters">
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Pesquisar produto..."
+            >
+
+            <select id="category-filter">
+                <option value="todos">Todas as categorias</option>
+                <option value="categoria1">Categoria 1</option>
+                <option value="categoria2">Categoria 2</option>
+            </select>
+
+        </div>
+
+
+        <div class="products-grid" id="products-list">
+
+            <article class="product-card" data-category="categoria1">
+
+                <div class="product-image">
+                    <img src="https://placehold.co/600x400?text=Produto+1"
+                        alt="Produto 1">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Categoria 1</span>
+                    <h3>Produto Exemplo 01</h3>
+                    <p class="price">R$ 199,90</p>
+
+                    <button class="add-button" data-name="Produto Exemplo 01">
+                        Adicionar ao carrinho
+                    </button>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="categoria2">
+
+                <div class="product-image">
+                    <img src="https://placehold.co/600x400?text=Produto+2"
+                        alt="Produto 2">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Categoria 2</span>
+                    <h3>Produto Exemplo 02</h3>
+                    <p class="price">R$ 299,90</p>
+
+                    <button class="add-button" data-name="Produto Exemplo 02">
+                        Adicionar ao carrinho
+                    </button>
+                </div>
+
+            </article>
+
+
+            <article class="product-card" data-category="categoria1">
+
+                <div class="product-image">
+                    <img src="https://placehold.co/600x400?text=Produto+3"
+                        alt="Produto 3">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Categoria 1</span>
+                    <h3>Produto Exemplo 03</h3>
+                    <p class="price">R$ 149,90</p>
+
+                    <button class="add-button" data-name="Produto Exemplo 03">
+                        Adicionar ao carrinho
+                    </button>
+                </div>
+
+            </article>
+
+        </div>
+
+        <p id="no-results" hidden>
+            Nenhum produto encontrado.
+        </p>
+
+    </main>
+
+
+    <footer>
+        <div class="container footer-content">
+            <p>© 2026 StoreProject. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
